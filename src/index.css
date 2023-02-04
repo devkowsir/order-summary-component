@@ -31,3 +31,9 @@ body {
   align-items: center;
   justify-content: center;
 }
+
+@media (min-width: 600px) {
+  body {
+    background: url('./images/pattern-background-desktop.svg') left top/100% no-repeat, var(--color-pale-blue);
+  }
+}
