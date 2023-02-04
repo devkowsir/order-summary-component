@@ -1,0 +1,142 @@
+.card {
+  background-color: white;
+  box-shadow: var(--box-shadow);
+
+  overflow: hidden;
+  border-radius: 20px;
+  width: 325px;
+
+  text-align: center;
+}
+
+.card__img {
+  max-width: 100%;
+}
+
+.card__body {
+  padding: 25px;
+}
+
+.card__title {
+  margin-block: 0 1rem;
+
+  color: var(--color-dark-blue);
+  font-size: 22px;
+  font-weight: 900;
+}
+
+.card__description {
+  font-weight: 500;
+  color: var(--color-desaturated-blue);
+}
+
+.card__plan {
+  margin: 25px 0px;
+  border-radius: 20px;
+  padding: 15px;
+
+  background-color: var(--color-very-pale-blue);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.card__pricing {
+  flex: 1;
+  text-align: left;
+}
+
+.card__pricing h4 {
+  color: var(--color-dark-blue);
+  font-size: 15px;
+  font-weight: 900;
+}
+
+.card__pricing h5 {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-desaturated-blue);
+}
+
+.card__link {
+  color: var(--color-bright-blue);
+  text-decoration: underline;
+  font-weight: 700;
+  font-size: 13px;
+  transition: all 200ms;
+  cursor: pointer;
+}
+
+.card__link:hover {
+  text-decoration: none;
+  color: var(--color-medium-slate-blue);
+}
+
+.card__action {
+  width: 100%;
+  padding: 16px 0;
+  border: none;
+  border-radius: 10px;
+
+  color: white;
+  font-weight: 900;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.card__action--cta {
+  background-color: var(--color-bright-blue);
+  box-shadow: var(--box-shadow);
+  transition: all 200ms;
+}
+
+.card__action--cta:hover {
+  background-color: var(--color-medium-slate-blue);
+}
+
+.card__action--cancel {
+  color: var(--color-desaturated-blue);
+  background-color: transparent;
+  transition: all 200ms;
+}
+
+.card__action--cancel:hover {
+  color: var(--color-dark-blue);
+}
+
+@media (min-width: 540px) {
+  .card {
+    width: 450px;
+  }
+
+  .card__title {
+    margin: 20px 0;
+    font-size: 28px;
+  }
+
+  .card__description {
+    padding: 0 20px;
+  }
+
+  .card__plan {
+    padding: 25px;
+  }
+
+  .card__plan h4 {
+    font-size: 16px;
+  }
+
+  .card__plan h5 {
+    font-size: 16px;
+  }
+
+  .card__link {
+    font-size: 14px;
+  }
+
+  .card__actions {
+    margin-top: 35px;
+  }
+}
