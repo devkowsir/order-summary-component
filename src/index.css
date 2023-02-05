@@ -22,7 +22,7 @@ body {
   line-height: 1.5;
   font-family: 'Red Hat Display', sans-serif;
 
-  background: url('./images/pattern-background-mobile.svg') left top/100% no-repeat, var(--color-pale-blue);
+  background: url('/images/pattern-background-mobile.svg') left top/100% no-repeat, var(--color-pale-blue);
 }
 
 #root {
@@ -34,6 +34,6 @@ body {
 
 @media (min-width: 600px) {
   body {
-    background: url('./images/pattern-background-desktop.svg') left top/100% no-repeat, var(--color-pale-blue);
+    background: url('/images/pattern-background-desktop.svg') left top/100% no-repeat, var(--color-pale-blue);
   }
 }
